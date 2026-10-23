@@ -20,7 +20,7 @@
 <body>
 <main>
   <h1>Bear Drive Privacy Policy</h1>
-  <p class="muted">Effective October 16, 2026</p>
+  <p class="muted">Effective October 22, 2026</p>
 
   <p>Bear Drive is a personal Android app for browsing and organizing your own Google Drive. It is not published on the Google Play Store and is used only by its developer and a few people the developer knows. This policy describes the current version of the app and will be updated before the app handles your information differently.</p>
 
@@ -31,12 +31,15 @@
     <li>your Google Drive account identifier, to keep each account's information separate on the phone;</li>
     <li>information about the files and folders inside the folders you open in the app: names, types, sizes, dates, owners' names, folder locations, photo and video dimensions, video length, and what your access allows you to do with each item.</li>
   </ul>
-  <p>Bear Drive requests full Google Drive access because it is built to browse and manage existing files anywhere in your Drive and in Shared with me. The current version reads file and folder information, and in My Drive it creates folders, renames, moves, and moves items to Google Drive's trash, only when you ask. It never deletes anything permanently: items moved to the trash can be restored from Google Drive's trash for 30 days. These changes go only to Google. It does not change items in Shared with me, and it does not download or upload files.</p>
+  <p>Bear Drive requests full Google Drive access because it is built to browse and manage existing files anywhere in your Drive and in Shared with me. The current version reads file and folder information, and in My Drive it creates folders, renames, moves, and moves items to Google Drive's trash, only when you ask. When you ask, it also copies items from Shared with me into your My Drive with Google Drive's own copy, so the files never pass through your phone. It never deletes anything permanently: items moved to the trash can be restored from Google Drive's trash for 30 days. These changes go only to Google. It does not change items in Shared with me, and it does not download or upload files.</p>
+  <p>Copies use your Google Drive storage. They are independent items: later changes to the originals are not copied, and the copies stay if the owner stops sharing the originals.</p>
 
   <h2>Where your information is kept</h2>
   <ul>
     <li>File and folder information and your account's email address and name are stored only on your phone, in the app's private storage, so folders you opened can be shown again quickly and while you are offline.</li>
-    <li>This information is excluded from Android backups and from transfers to a new phone.</li>
+    <li>For each Copy to My Drive, the phone stores the names, folder paths, and Google Drive identifiers of the items in that copy and the result for each item, in the app's private storage, so a copy can continue after the app closes. Each copy's record is deleted 7 days after the copy ends.</li>
+    <li>Each item Bear Drive copies carries a hidden marker that only Bear Drive can read. It lets an interrupted copy finish without making a second copy of the same item. The marker contains no personal information and stays on the copy in your Drive.</li>
+    <li>This information, including copy records, is excluded from Android backups and from transfers to a new phone.</li>
     <li>The access Google grants to the app is kept only in memory while the app runs and is never written to storage.</li>
     <li>Bear Drive has no server of its own. Information travels only between your phone and Google.</li>
   </ul>
@@ -47,7 +50,7 @@
 
   <h2>Removing your information</h2>
   <ul>
-    <li><strong>Sign out</strong> in Bear Drive's Settings removes the account's stored file and folder information, its email address and name, and its last opened folder from your phone. Per-folder display choices, such as list or gallery view, stay on the phone under one-way scrambled identifiers until the app is uninstalled.</li>
+    <li><strong>Sign out</strong> in Bear Drive's Settings removes the account's stored file and folder information, its copy records, its email address and name, and its last opened folder from your phone. Signing out during a copy stops it; items already copied stay in your Google Drive. Per-folder display choices, such as list or gallery view, stay on the phone under one-way scrambled identifiers until the app is uninstalled.</li>
     <li><strong>Uninstalling</strong> the app removes everything it stored on your phone.</li>
     <li>To withdraw Bear Drive's access to your Google account, remove it at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</li>
   </ul>
